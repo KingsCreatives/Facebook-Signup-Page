@@ -3,7 +3,11 @@
     --blue: #1877F2;
     --green: #42b72a;
     --ash: rgb(109, 109, 109);
+    --background: #ebebeb;
+}
 
+body{
+    background: var(--white);
 }
 
 *{
@@ -27,6 +31,29 @@ a{
 fieldset{
     border: none;
 }
+
+.logo-text{
+    padding-left: 20px;
+    max-width: 550px;
+    padding-bottom: 200px;
+}
+
+.logo{
+    width: 280px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.logo-text h2{
+    display: inline-block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+
 
 /*Form*/
 .form-container,
@@ -54,9 +81,10 @@ button{
 }
 
 .form-container{
-    background: red;
-    max-width: 360px;
+    background: var(--white);
+    max-width: 650px;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 
@@ -76,7 +104,9 @@ button{
     width: 99%;
     background: var(--blue);
     font-size: 20px;
+    border: none;
 }
+
 
 .user-form a{
     display: block;
@@ -84,9 +114,11 @@ button{
     margin-bottom: 10px;
     padding: 8px 0 15px 0;
     border-bottom: 1px solid var(--ash);
+    color: var(--blue);
 }
 
-.user-form a:hover{
+.user-form a:hover,
+.create-page a:hover{
     text-decoration: underline;
 }
 
@@ -96,4 +128,27 @@ button{
     width: 50%;
     margin: 20px auto;
 }
+
+.main-section{
+  height: 99vh;
+  background: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.create-page{
+    padding: 5px 0 10px 35px;
+}
+
+.create-page a{
+    color: #000;
+    font-weight: bold;
+}
+
+.create-page p{
+    font-size: 14px;
+}
+
 
