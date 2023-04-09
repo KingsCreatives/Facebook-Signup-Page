@@ -6,13 +6,17 @@
     --background: #ebebeb;
 }
 
+
+
 body{
     background: var(--white);
+    margin-bottom: 40px;
 }
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -32,10 +36,9 @@ fieldset{
     border: none;
 }
 
-.logo-text{
+/*Logo and Fb Text Section*/
+.column-1{
     padding-left: 20px;
-    max-width: 550px;
-    padding-bottom: 200px;
 }
 
 .logo{
@@ -46,7 +49,11 @@ fieldset{
     width: 100%;
 }
 
-.logo-text h2{
+.column-1{
+  max-width: 450px;
+}
+
+.column-1 h2{
     display: inline-block;
     width: 100%;
     font-weight: 400;
@@ -54,9 +61,23 @@ fieldset{
 }
 
 
+/*Default Styles for both columns*/
+.main-section{
+    height: 99vh;
+    background: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px;
+  }
 
-/*Form*/
-.form-container,
+.column{
+    max-width: 500px;
+    min-width: 350px;
+}
+
+.user-form,
 input,
 button{
     border-radius: 5px;
@@ -79,11 +100,12 @@ button{
     border: 1px solid var(--ash);
     margin-bottom: 10px;
 }
-
-.form-container{
+   
+/*Form Section*/
+.user-form{
     background: var(--white);
-    max-width: 650px;
-    padding: 10px;
+    width: 100%;
+    padding: 15px;
     margin-bottom: 20px;
 }
 
@@ -129,14 +151,6 @@ button{
     margin: 20px auto;
 }
 
-.main-section{
-  height: 99vh;
-  background: var(--background);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
 
 .create-page{
     padding: 5px 0 10px 35px;
