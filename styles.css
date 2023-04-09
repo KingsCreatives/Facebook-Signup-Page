@@ -53,6 +53,10 @@ fieldset{
     font-size: 30px;
 }
 
+.column-1 {
+    padding-bottom: 150px;
+}
+
 
 /*Default Styles for both columns*/
 .main-section{
@@ -153,7 +157,7 @@ button{
 
 .create-page{
     margin-top: 20px;
-    padding: 5px 0 10px 35px;
+    text-align: center;
 }
 
 .create-page a{
@@ -168,7 +172,7 @@ button{
 
 /*Footer*/
 footer{
-    padding-top: 18px;
+    padding-top: 20px;
     position: relative;
     left: 0;
     bottom: 0;
@@ -176,6 +180,7 @@ footer{
     margin: 0 auto;
     font-size: 12px;
     background: var(--white);
+    color: var(--ash);
 }
 
 footer li{
@@ -203,4 +208,58 @@ footer a:hover{
     padding-bottom: 8px;
     margin-bottom: 8px;
 }
+
+/*Useful Links*/
+.useful-links{
+    line-height: 1.9;
+    word-spacing: 1.5;
+    letter-spacing: 1.5;
+}
+
+
+/*Copy Right*/
+.copy-right{
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 992px) {
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .column{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .column-1 h2{
+        margin-top: -10px;
+    }
+    .useful-links{
+        line-height: 1.5;
+        word-spacing: 1.5;
+        letter-spacing: 1.5;
+    }
+
+    .column-2{
+        margin-top: -80px;
+        padding-bottom: 30px;
+    }
+    
+    footer{
+        width: 85vw;
+    }
+
+    footer li{
+        padding: 0 5px;
+    }
+}
+
+
 
