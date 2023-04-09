@@ -10,13 +10,13 @@
 
 body{
     background: var(--white);
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    position: relative;
 }
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -37,10 +37,6 @@ fieldset{
 }
 
 /*Logo and Fb Text Section*/
-.column-1{
-    padding-left: 20px;
-}
-
 .logo{
     width: 280px;
 }
@@ -49,9 +45,6 @@ fieldset{
     width: 100%;
 }
 
-.column-1{
-  max-width: 450px;
-}
 
 .column-1 h2{
     display: inline-block;
@@ -63,18 +56,19 @@ fieldset{
 
 /*Default Styles for both columns*/
 .main-section{
-    height: 99vh;
+    height: 97vh;
     background: var(--background);
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    gap: 10px;
   }
 
 .column{
     max-width: 500px;
-    min-width: 350px;
+    min-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .user-form,
@@ -100,13 +94,18 @@ button{
     border: 1px solid var(--ash);
     margin-bottom: 10px;
 }
+
+.column-2{
+    max-width: 450px;
+}
    
 /*Form Section*/
 .user-form{
     background: var(--white);
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
+    width: 85%;
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 
@@ -153,6 +152,7 @@ button{
 
 
 .create-page{
+    margin-top: 20px;
     padding: 5px 0 10px 35px;
 }
 
@@ -165,4 +165,42 @@ button{
     font-size: 14px;
 }
 
+
+/*Footer*/
+footer{
+    padding-top: 18px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 70vw;
+    margin: 0 auto;
+    font-size: 12px;
+    background: var(--white);
+}
+
+footer li{
+    padding: 0 3px;
+    line-height: 1.5;
+}
+
+footer a{
+    color: var(--ash);
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.plus-sign{
+    padding: 0 5px;
+    background: rgba(0,0,0,0.1);
+    border: 1px solid var(--ash);
+    
+}
+
+.languages{
+    border-bottom: 1px solid #cfcdcd;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
 
